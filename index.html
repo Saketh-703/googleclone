@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" type="image" href="title.png">
+    <link rel="icon" type="image" href="g.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,7 +35,7 @@
             align-items: center;
         }
         .inpt{
-            width: 60vw;
+            width: 58vw;
             background-color: white;
             display: flex;
             border-radius: 25px;
@@ -54,8 +54,10 @@
             border: none;
             font-size: 15px;
             outline: none;
-            padding: 10px;
-            border-radius:25px;
+            padding: 5px;
+            border-radius: 25px;
+            margin: none;
+            gap:3px;
         }
         .items{
             display: flex;
@@ -126,14 +128,17 @@
         .text{
             font-size: 20px;
         }
+        a
+        {
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="center">
-            <img src="google.png" alt="" style="width: 400px ; margin-top 30px; margin-bottom: 30px;">
-            
+            <img src="google.png" alt="" style="width: 400px; margin-top: 30px; margin-bottom: 30px;">
             <div class="inpt">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <form action="https://www.google.com/search">
@@ -143,13 +148,15 @@
                 <i class="fa-solid fa-camera"></i>
             </div>
             <div class="items">
-                <div class="favitems">
-                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
-                    <div class="circle">
-                        <img src="insta.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
-                    </div>
-                    <p class="tf">Instagram</p>
-                </div>
+                    <a href = "https://www.instagram.com/accounts/login/" >
+                        <div class="favitems">
+                            <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                            <div class="circle">
+                                <img src="insta.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                            </div>
+                            <p class="tf">Instagram</p>
+                        </div>
+                    </a>
                 <div class="favitems">
                     <i class="fa-solid fa-ellipsis-vertical dot"></i>
                     <div class="circle">
@@ -157,14 +164,17 @@
                     </div>
                     <p class="tf">SII</p>
                 </div>
-                <div class="favitems">
-                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
-                    <div class="circle">
-                        <img src="dd.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                <a href = "https://discord.com/login">
+                    <div class="favitems">
+                        <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                        <div class="circle">
+                            <img src="dd.png" class="image" alt="" style="width: 100%; height: 100%; border-radius: 50%;">
+                        </div>
+                        <p class="tf">Discord
+                        </p>
                     </div>
-                    <p class="tf">Discord
-                    </p>
-                </div>
+                </a>
+               <a href = "https://workspace.google.com/intl/en_in/gmail/">
                 <div class="favitems">
                     <i class="fa-solid fa-ellipsis-vertical dot"></i>
                     <div class="circle">
@@ -172,6 +182,9 @@
                     </div>
                     <p class="tf">GMail</p>
                 </div>
+               </a>
+               
+               <a href = "https://www.youtube.com/">
                 <div class="favitems">
                     <i class="fa-solid fa-ellipsis-vertical dot"></i>
                     <div class="circle">
@@ -179,6 +192,7 @@
                     </div>
                     <p class="tf">YouTube</p>
                 </div>
+               </a>
             </div>
         </div>
     </div>
